@@ -30,3 +30,7 @@ sysinfo.txt
 *.unitypackage
 
 \.DS_Store
+
+Library/
+
+Temp/
