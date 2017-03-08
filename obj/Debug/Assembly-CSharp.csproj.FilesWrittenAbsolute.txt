@@ -1,0 +1,13 @@
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/UnityEngine.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/UnityEditor.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Nina/development/IntroToGameDev/Temp/bin/Debug/Mono.Cecil.Mdb.dll
