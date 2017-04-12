@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HomeScreenManager : MonoBehaviour { 
 	//creating public game objects and booleans 
@@ -201,18 +202,14 @@ public class HomeScreenManager : MonoBehaviour {
 
 
 
-
-
 	// Use this for initialization
 	void Start () {
-		
+		 
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-	
 
 
 
@@ -232,6 +229,7 @@ public class HomeScreenManager : MonoBehaviour {
 			StartScreenObject.SetActive (false); //start screen is no longer active
 			HomeScreenShowing =true; //home screen will appear
 			HomeScreenObject.SetActive (true); //home screen is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (CalendarShowing == true) { //if the calendar is showing, make it disappear
@@ -239,6 +237,7 @@ public class HomeScreenManager : MonoBehaviour {
 			CalendarObject.SetActive (false); //calendar is no longer active 
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -247,6 +246,7 @@ public class HomeScreenManager : MonoBehaviour {
 			PhotosObject.SetActive (false); //photos is no longer active
 			HomeScreenShowing = true; //make the home screen show
 			HomeScreenObject.SetActive (true); //make the home screen active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -255,6 +255,7 @@ public class HomeScreenManager : MonoBehaviour {
 			MessagesObject.SetActive (false); //messages is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -263,6 +264,7 @@ public class HomeScreenManager : MonoBehaviour {
 			CameraObject.SetActive (false); //camera is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -271,6 +273,7 @@ public class HomeScreenManager : MonoBehaviour {
 			WeatherObject.SetActive (false); //weather is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -279,6 +282,7 @@ public class HomeScreenManager : MonoBehaviour {
 			AlarmObject.SetActive (false); //alarm is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -287,6 +291,7 @@ public class HomeScreenManager : MonoBehaviour {
 			RemindersObject.SetActive (false); //Reminders is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -295,6 +300,7 @@ public class HomeScreenManager : MonoBehaviour {
 			MapsObject.SetActive (false); //Maps is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -303,6 +309,7 @@ public class HomeScreenManager : MonoBehaviour {
 			HealthObject.SetActive (false); //Health is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -311,6 +318,7 @@ public class HomeScreenManager : MonoBehaviour {
 			ContactsObject.SetActive (false); //Contacts is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -319,6 +327,7 @@ public class HomeScreenManager : MonoBehaviour {
 			MailObject.SetActive (false); //Mail is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 		 
@@ -326,7 +335,8 @@ public class HomeScreenManager : MonoBehaviour {
 			NewsShowing = false;
 			NewsObject.SetActive (false); //News is no longer active
 			HomeScreenShowing = true; //make the home screen show 
-			HomeScreenObject.SetActive (true); //make the home screen active 
+			HomeScreenObject.SetActive (true); //make the home screen active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 			
 
@@ -336,6 +346,7 @@ public class HomeScreenManager : MonoBehaviour {
 			YouTubeObject.SetActive (false); //YouTube is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 			
 
@@ -344,6 +355,7 @@ public class HomeScreenManager : MonoBehaviour {
 			NotesObject.SetActive (false); //Notes is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -353,6 +365,7 @@ public class HomeScreenManager : MonoBehaviour {
 			SnapChatObject.SetActive (false); //SnapChat is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -361,6 +374,7 @@ public class HomeScreenManager : MonoBehaviour {
 			BankObject.SetActive (false); //Bank is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -369,6 +383,7 @@ public class HomeScreenManager : MonoBehaviour {
 			TwitterObject.SetActive (false); //Twitter is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -377,6 +392,7 @@ public class HomeScreenManager : MonoBehaviour {
 			InstagramObject.SetActive (false); //Instagram is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -385,6 +401,7 @@ public class HomeScreenManager : MonoBehaviour {
 			TumblrObject.SetActive (false); //Tumblr is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -393,6 +410,7 @@ public class HomeScreenManager : MonoBehaviour {
 			TinderObject.SetActive (false); //Tinder is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -401,6 +419,7 @@ public class HomeScreenManager : MonoBehaviour {
 			NekoAtsumeObject.SetActive (false); //NekoAtsume is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -409,6 +428,7 @@ public class HomeScreenManager : MonoBehaviour {
 			PhoneObject.SetActive (false); //Phone is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
@@ -417,14 +437,18 @@ public class HomeScreenManager : MonoBehaviour {
 			SafariObject.SetActive (false); //Safari is no longer active
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 				}
 
 
 		if (SpotifyShowing == true) { //if the Spotify screen is showing, make it disappear
 			SpotifyShowing = false;
 			SpotifyObject.SetActive (false); //Spotify is no longer active
+			GameObject.Find("Scoop").GetComponent<AudioSource> ().Pause ();
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
+
 				}
 
 
@@ -438,6 +462,8 @@ public class HomeScreenManager : MonoBehaviour {
 			Convo1Object.SetActive (false); //convo1 is no longer active
 			MessagesShowing = true; //takes the player to messages menu 
 			MessagesObject.SetActive (true); // messages menu is active 
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
+
 		}
 
 		if (Convo2Showing == true) { //if the convo2 screen is showing, make it disappear
@@ -445,6 +471,8 @@ public class HomeScreenManager : MonoBehaviour {
 			Convo2Object.SetActive (false); //convo2 is no longer active
 			MessagesShowing = true; //takes the player to messages menu 
 			MessagesObject.SetActive (true); // messages menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
+
 		}
 
 		if (Convo3Showing == true) { //if the convo3 screen is showing, make it disappear
@@ -452,6 +480,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Convo3Object.SetActive (false); //convo3 is no longer active
 			MessagesShowing = true; //takes the player to messages menu 
 			MessagesObject.SetActive (true); // messages menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Convo4Showing == true) { //if the convo4 screen is showing, make it disappear
@@ -459,6 +488,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Convo4Object.SetActive (false); //convo4 is no longer active
 			MessagesShowing = true; //takes the player to messages menu 
 			MessagesObject.SetActive (true); // messages menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Convo5Showing == true) { //if the convo5 screen is showing, make it disappear
@@ -466,6 +496,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Convo5Object.SetActive (false); //convo5 is no longer active
 			MessagesShowing = true; //takes the player to messages menu 
 			MessagesObject.SetActive (true); // messages menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		//notes second layer stuff
@@ -475,6 +506,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Note1Object.SetActive (false); //note1 is no longer active
 			NotesShowing = true; //takes the player to notes menu 
 			NotesObject.SetActive (true); // notes menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Note2Showing == true) { //if the note2 screen is showing, make it disappear
@@ -482,6 +514,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Note2Object.SetActive (false); //note2 is no longer active
 			NotesShowing = true; //takes the player to notes menu 
 			NotesObject.SetActive (true); // notes menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Note3Showing == true) { //if the note3 screen is showing, make it disappear
@@ -489,6 +522,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Note3Object.SetActive (false); //note3 is no longer active
 			NotesShowing = true; //takes the player to notes menu 
 			NotesObject.SetActive (true); // notes menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Note4Showing == true) { //if the note4 screen is showing, make it disappear
@@ -496,6 +530,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Note4Object.SetActive (false); //note4 is no longer active
 			NotesShowing = true; //takes the player to notes menu 
 			NotesObject.SetActive (true); // notes menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Note5Showing == true) { //if the note5 screen is showing, make it disappear
@@ -503,6 +538,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Note5Object.SetActive (false); //note5 is no longer active
 			NotesShowing = true; //takes the player to notes menu 
 			NotesObject.SetActive (true); // notes menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		//safari second layer stuff
@@ -511,6 +547,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Tab1Object.SetActive (false); //Tab1 is no longer active
 			SafariShowing = true; //takes the player to safari menu 
 			SafariObject.SetActive (true); // safari menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Tab2Showing == true) { //if the Tab2 screen is showing, make it disappear
@@ -518,6 +555,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Tab2Object.SetActive (false); //Tab2 is no longer active
 			SafariShowing = true; //takes the player to safari menu 
 			SafariObject.SetActive (true); // safari menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Tab3Showing == true) { //if the Tab3 screen is showing, make it disappear
@@ -525,6 +563,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Tab3Object.SetActive (false); //Tab3 is no longer active
 			SafariShowing = true; //takes the player to safari menu 
 			SafariObject.SetActive (true); // safari menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Tab4Showing == true) { //if the Tab4 screen is showing, make it disappear
@@ -532,6 +571,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Tab4Object.SetActive (false); //Tab4 is no longer active
 			SafariShowing = true; //takes the player to safari menu 
 			SafariObject.SetActive (true); // safari menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Tab5Showing == true) { //if the Tab5 screen is showing, make it disappear
@@ -539,6 +579,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Tab5Object.SetActive (false); //Tab5 is no longer active
 			SafariShowing = true; //takes the player to safari menu 
 			SafariObject.SetActive (true); // safari menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (HistoryShowing == true) { //if the History screen is showing, make it disappear
@@ -546,6 +587,7 @@ public class HomeScreenManager : MonoBehaviour {
 			HistoryObject.SetActive (false); //History is no longer active
 			SafariShowing = true; //takes the player to safari menu 
 			SafariObject.SetActive (true); // safari menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		//news second layer stuff
@@ -555,6 +597,7 @@ public class HomeScreenManager : MonoBehaviour {
 			News1Object.SetActive (false); //news1 is no longer active
 			NewsShowing = true; //takes the player to news menu 
 			NewsObject.SetActive (true); // news menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (News2Showing == true) { //if the news2 screen is showing, make it disappear
@@ -562,6 +605,7 @@ public class HomeScreenManager : MonoBehaviour {
 			News2Object.SetActive (false); //news2 is no longer active
 			NewsShowing = true; //takes the player to news menu 
 			NewsObject.SetActive (true); // news menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (News3Showing == true) { //if the news3 screen is showing, make it disappear
@@ -569,6 +613,7 @@ public class HomeScreenManager : MonoBehaviour {
 			News3Object.SetActive (false); //news3 is no longer active
 			NewsShowing = true; //takes the player to news menu 
 			NewsObject.SetActive (true); // news menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (News4Showing == true) { //if the news4 screen is showing, make it disappear
@@ -576,6 +621,7 @@ public class HomeScreenManager : MonoBehaviour {
 			News4Object.SetActive (false); //news4 is no longer active
 			NewsShowing = true; //takes the player to news menu 
 			NewsObject.SetActive (true); // news menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (News5Showing == true) { //if the news5 screen is showing, make it disappear
@@ -583,6 +629,7 @@ public class HomeScreenManager : MonoBehaviour {
 			News5Object.SetActive (false); //news5 is no longer active
 			NewsShowing = true; //takes the player to news menu 
 			NewsObject.SetActive (true); // news menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		//second layer tinder stuff 
@@ -591,6 +638,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Match1Object.SetActive (false); //match1 is no longer active
 			TinderShowing = true; //takes the player to tinder menu 
 			TinderObject.SetActive (true); // tinder menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Match2Showing == true) { //if the match2 screen is showing, make it disappear
@@ -598,6 +646,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Match2Object.SetActive (false); //match2 is no longer active
 			TinderShowing = true; //takes the player to tinder menu 
 			TinderObject.SetActive (true); // tinder menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Match3Showing == true) { //if the match3 screen is showing, make it disappear
@@ -605,6 +654,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Match3Object.SetActive (false); //match3 is no longer active
 			TinderShowing = true; //takes the player to tinder menu 
 			TinderObject.SetActive (true); // tinder menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Match4Showing == true) { //if the match4 screen is showing, make it disappear
@@ -612,6 +662,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Match4Object.SetActive (false); //match4 is no longer active
 			TinderShowing = true; //takes the player to tinder menu 
 			TinderObject.SetActive (true); // tinder menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Match5Showing == true) { //if the match5 screen is showing, make it disappear
@@ -619,6 +670,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Match5Object.SetActive (false); //match5 is no longer active
 			TinderShowing = true; //takes the player to tinder menu 
 			TinderObject.SetActive (true); // tinder menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		//second layer spotify stuff
@@ -628,6 +680,8 @@ public class HomeScreenManager : MonoBehaviour {
 			Playlist1Object.SetActive (false); //Playlist1 is no longer active
 			SpotifyShowing = true; //takes the player to Spotify menu 
 			SpotifyObject.SetActive (true); // Spotify menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
+
 		}
 
 		if (Playlist2Showing == true) { //if the Playlist2 screen is showing, make it disappear
@@ -635,6 +689,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Playlist2Object.SetActive (false); //Playlist2 is no longer active
 			SpotifyShowing = true; //takes the player to Spotify menu 
 			SpotifyObject.SetActive (true); // Spotify menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Playlist3Showing == true) { //if the Playlist3 screen is showing, make it disappear
@@ -642,6 +697,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Playlist3Object.SetActive (false); //Playlist3 is no longer active
 			SpotifyShowing = true; //takes the player to Spotify menu 
 			SpotifyObject.SetActive (true); // Spotify menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Playlist4Showing == true) { //if the Playlist4 screen is showing, make it disappear
@@ -649,6 +705,7 @@ public class HomeScreenManager : MonoBehaviour {
 			Playlist4Object.SetActive (false); //Playlist4 is no longer active
 			SpotifyShowing = true; //takes the player to Spotify menu 
 			SpotifyObject.SetActive (true); // Spotify menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (Playlist5Showing == true) { //if the Playlist5 screen is showing, make it disappear
@@ -656,14 +713,20 @@ public class HomeScreenManager : MonoBehaviour {
 			Playlist5Object.SetActive (false); //Playlist5 is no longer active
 			SpotifyShowing = true; //takes the player to Spotify menu 
 			SpotifyObject.SetActive (true); // Spotify menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		if (NowPlayingShowing == true) { //if the NowPlaying screen is showing, make it disappear
 			NowPlayingShowing = false;
+			GameObject.Find("Scoop").GetComponent<AudioSource> ().Pause ();
 			NowPlayingObject.SetActive (false); //NowPlaying is no longer active
 			SpotifyShowing = true; //takes the player to Spotify menu 
 			SpotifyObject.SetActive (true); // Spotify menu is active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
+
+
 		}
+
 
 		//second layer camera stuff
 		if (FrontFacingCameraShowing == true) { //if the front camera is showing, make it disappear
@@ -671,6 +734,7 @@ public class HomeScreenManager : MonoBehaviour {
 			FrontFacingCameraObject.SetActive (false); //front camera is no longer active 
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 
 		//second layer phone stuff
@@ -686,6 +750,7 @@ public class HomeScreenManager : MonoBehaviour {
 			KeypadObject.SetActive (false); //Keypad is no longer active 
 			HomeScreenShowing = true; //make the home screen show 
 			HomeScreenObject.SetActive (true); //make the home screen active
+			GameObject.Find("back").GetComponent<AudioSource> ().Play (); //play homescreen sound
 		}
 	}
 
@@ -712,6 +777,7 @@ public class HomeScreenManager : MonoBehaviour {
 		CalendarShowing = true; //calendar screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void MessagesClick (){ //on click the messages screen appears
@@ -729,6 +795,7 @@ public class HomeScreenManager : MonoBehaviour {
 		Convo4Showing = false; 
 		Convo5Object.SetActive (false); //conversation 5 is not showing
 		Convo5Showing = false; 
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void PhotosClick (){ //on click the photos screen appears
@@ -736,6 +803,7 @@ public class HomeScreenManager : MonoBehaviour {
 		PhotosShowing = true; //photos screen is showing 
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void CameraClick (){ //on click the camera screen appears 
@@ -745,6 +813,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		FrontFacingCameraObject.SetActive (false); //front facing camera is not the default camera screen
 		FrontFacingCameraShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 		
@@ -753,6 +822,7 @@ public class HomeScreenManager : MonoBehaviour {
 		WeatherShowing = true; //weather screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void AlarmClick (){ //on click the Alarm screen appears 
@@ -760,6 +830,7 @@ public class HomeScreenManager : MonoBehaviour {
 		AlarmShowing = true; //Alarm screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void RemindersClick (){ //on click the Reminders screen appears 
@@ -767,6 +838,7 @@ public class HomeScreenManager : MonoBehaviour {
 		RemindersShowing = true; //Reminders screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void MapsClick (){ //on click the Maps screen appears 
@@ -774,6 +846,7 @@ public class HomeScreenManager : MonoBehaviour {
 		MapsShowing = true; //Maps screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void HealthClick (){ //on click the Health screen appears 
@@ -781,6 +854,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HealthShowing = true; //Health screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void ContactsClick (){ //on click the Contacts screen appears 
@@ -788,6 +862,7 @@ public class HomeScreenManager : MonoBehaviour {
 		ContactsShowing = true; //Contacts screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void MailClick (){ //on click the Mail screen appears 
@@ -795,6 +870,7 @@ public class HomeScreenManager : MonoBehaviour {
 		MailShowing = true; //Mail screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void NewsClick (){ //on click the News screen appears 
@@ -812,6 +888,7 @@ public class HomeScreenManager : MonoBehaviour {
 		News4Showing = false; 
 		News5Object.SetActive (false); //News 5 is not showing
 		News5Showing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void YouTubeClick (){ //on click the YouTube screen appears 
@@ -819,6 +896,7 @@ public class HomeScreenManager : MonoBehaviour {
 		YouTubeShowing = true; //YouTube screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void NotesClick (){ //on click the Notes screen appears 
@@ -836,6 +914,7 @@ public class HomeScreenManager : MonoBehaviour {
 		Note4Showing = false; 
 		Note5Object.SetActive (false); //Note 5 is not showing
 		Note5Showing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void SnapChatClick (){ //on click the SnapChat screen appears 
@@ -843,6 +922,7 @@ public class HomeScreenManager : MonoBehaviour {
 		SnapChatShowing = true; //SnapChat screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void BankClick (){ //on click the Bank screen appears 
@@ -850,6 +930,7 @@ public class HomeScreenManager : MonoBehaviour {
 		BankShowing = true; //Bank screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void TwitterClick (){ //on click the Twitter screen appears 
@@ -857,6 +938,7 @@ public class HomeScreenManager : MonoBehaviour {
 		TwitterShowing = true; //Twitter screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 
 	public void InstagramClick (){ //on click the Instagram screen appears 
@@ -864,6 +946,7 @@ public class HomeScreenManager : MonoBehaviour {
 		InstagramShowing = true; //Instagram screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void TumblrClick (){ //on click the Tumblr screen appears 
@@ -871,6 +954,7 @@ public class HomeScreenManager : MonoBehaviour {
 		TumblrShowing = true; //Tumblr screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void TinderClick (){ //on click the Tinder screen appears 
@@ -888,6 +972,7 @@ public class HomeScreenManager : MonoBehaviour {
 		Match4Showing = false; 
 		Match5Object.SetActive (false); //Match 5 is not showing
 		Match5Showing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void NekoAtsumeClick (){ //on click the NekoAtsume screen appears 
@@ -895,6 +980,9 @@ public class HomeScreenManager : MonoBehaviour {
 		NekoAtsumeShowing = true; // NekoAtsume screen is showing
 		HomeScreenObject.SetActive (false);
 		HomeScreenShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
+
+		GameObject.Find("meow").GetComponent<AudioSource> ().Play ();
 			}
 		
 	public void PhoneClick (){ //on click the Phone screen appears 
@@ -906,7 +994,25 @@ public class HomeScreenManager : MonoBehaviour {
 		VoicemailShowing = false;
 		KeypadObject.SetActive (false); //the keypad screen does not appear when click on phone
 		KeypadShowing = false; 
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
+	public void UTI (){
+		GameObject.Find("Julia").GetComponent<AudioSource> ().Stop ();//stops other audio 
+		GameObject.Find("Uti2").GetComponent<AudioSource> ().Stop ();//stops other audio 
+		GameObject.Find("Uti1").GetComponent<AudioSource> ().Play ();//play uti first voicemail
+	}
+	public void UTI2 (){
+		GameObject.Find("Uti1").GetComponent<AudioSource> ().Stop ();//stops other audio 
+		GameObject.Find("Julia").GetComponent<AudioSource> ().Stop ();//stops other audio 
+		GameObject.Find("Uti2").GetComponent<AudioSource> ().Play ();//play uti second voicemail
+
+	}
+	public void JULIA (){
+		GameObject.Find("Uti2").GetComponent<AudioSource> ().Stop ();//stops other audio 
+		GameObject.Find("Uti1").GetComponent<AudioSource> ().Stop ();//stops other audio 
+		GameObject.Find("Julia").GetComponent<AudioSource> ().Play ();//play julia voicemail
+	}
+
 		
 	public void SafariClick (){ //on click the Safari screen appears 
 		SafariObject.SetActive (true); //Safari becomes active 
@@ -925,6 +1031,7 @@ public class HomeScreenManager : MonoBehaviour {
 		Tab5Showing = false;
 		HistoryObject.SetActive (false); //history is not showing
 		HistoryShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
 		
 	public void SpotifyClick (){ //on click the Spotify screen appears 
@@ -944,7 +1051,9 @@ public class HomeScreenManager : MonoBehaviour {
 		Playlist5Showing = false;
 		NowPlayingObject.SetActive (false); //NowPlaying is not showing
 		NowPlayingShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 			}
+
 
 	//second layer (clicking WITHIN apps to get to deeper layers)
 
@@ -957,6 +1066,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		CameraObject.SetActive (false); //normal camera is gone !!
 		CameraShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 		}
 	public void Switch2Click (){ //on click during front camera, it will take you back to front facing camera
 		FrontFacingCameraObject.SetActive (false); //front facing camera disappears
@@ -965,6 +1075,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		CameraObject.SetActive (true); //normal camera is back !!
 		CameraShowing = true;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	//clicking on conversations on messages app
@@ -976,6 +1087,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		MessagesObject.SetActive (false);
 		MessagesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Convo2Click (){ //on click the convo2 screen appears 
@@ -985,6 +1097,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		MessagesObject.SetActive (false);
 		MessagesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Convo3Click (){ //on click the convo3 screen appears 
@@ -994,6 +1107,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		MessagesObject.SetActive (false);
 		MessagesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Convo4Click (){ //on click the convo4 screen appears 
@@ -1003,6 +1117,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		MessagesObject.SetActive (false);
 		MessagesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Convo5Click (){ //on click the convo5 screen appears 
@@ -1012,6 +1127,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		MessagesObject.SetActive (false);
 		MessagesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	// notes screens
@@ -1023,6 +1139,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NotesObject.SetActive (false); // notes menu goes away so you can see the note
 		NotesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Note2Click (){ //on click the note2 screen appears 
@@ -1032,6 +1149,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NotesObject.SetActive (false); // notes menu goes away so you can see the note
 		NotesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Note3Click (){ //on click the note3 screen appears 
@@ -1041,6 +1159,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NotesObject.SetActive (false); // notes menu goes away so you can see the note
 		NotesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Note4Click (){ //on click the note4 screen appears 
@@ -1050,6 +1169,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NotesObject.SetActive (false); // notes menu goes away so you can see the note
 		NotesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Note5Click (){ //on click the note5 screen appears 
@@ -1059,6 +1179,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NotesObject.SetActive (false); // notes menu goes away so you can see the note
 		NotesShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	//tinder match screens
@@ -1071,6 +1192,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		TinderObject.SetActive (false); // tinder menu goes away so you can see the match conversation
 		TinderShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Match2Click (){ //on click the Match2 screen appears 
@@ -1080,6 +1202,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		TinderObject.SetActive (false); // tinder menu goes away so you can see the match conversation
 		TinderShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Match3Click (){ //on click the Match3 screen appears 
@@ -1089,6 +1212,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		TinderObject.SetActive (false); // tinder menu goes away so you can see the match conversation
 		TinderShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Match4Click (){ //on click the Match4 screen appears 
@@ -1098,6 +1222,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		TinderObject.SetActive (false); // tinder menu goes away so you can see the match conversation
 		TinderShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Match5Click (){ //on click the Match5 screen appears 
@@ -1107,6 +1232,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		TinderObject.SetActive (false); // tinder menu goes away so you can see the match conversation
 		TinderShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	//safari tabs + history screens
@@ -1118,6 +1244,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SafariObject.SetActive (false); // safari menu goes away so you can see the tab
 		SafariShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 	public void Tab2Click (){ //on click the tab2 screen appears 
 		Tab2Object.SetActive (true); //tab2 becomes active 
@@ -1126,6 +1253,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SafariObject.SetActive (false); // safari menu goes away so you can see the tab
 		SafariShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 	public void Tab3Click (){ //on click the tab3 screen appears 
 		Tab3Object.SetActive (true); //tab3 becomes active 
@@ -1134,6 +1262,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SafariObject.SetActive (false); // safari menu goes away so you can see the tab
 		SafariShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 	public void Tab4Click (){ //on click the tab4 screen appears 
 		Tab4Object.SetActive (true); //tab4 becomes active 
@@ -1142,6 +1271,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SafariObject.SetActive (false); // safari menu goes away so you can see the tab
 		SafariShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 	public void Tab5Click (){ //on click the tab5 screen appears 
 		Tab5Object.SetActive (true); //tab5 becomes active 
@@ -1150,6 +1280,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SafariObject.SetActive (false); // safari menu goes away so you can see the tab
 		SafariShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 	public void HistoryClick (){ //on click the history screen appears 
 		HistoryObject.SetActive (true); //history becomes active 
@@ -1158,6 +1289,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SafariObject.SetActive (false); // safari menu goes away so you can see history
 		SafariShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	//spotify playlist + now playing screens
@@ -1169,6 +1301,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SpotifyObject.SetActive (false); // spotify menu goes away so you can see the playlist
 		SpotifyShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Playlist2Click (){ //on click the Playlist2 screen appears 
@@ -1178,6 +1311,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SpotifyObject.SetActive (false); // spotify menu goes away so you can see the playlist
 		SpotifyShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Playlist3Click (){ //on click the Playlist3 screen appears 
@@ -1187,6 +1321,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SpotifyObject.SetActive (false); // spotify menu goes away so you can see the playlist
 		SpotifyShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Playlist4Click (){ //on click the Playlist4 screen appears 
@@ -1196,6 +1331,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SpotifyObject.SetActive (false); // spotify menu goes away so you can see the playlist
 		SpotifyShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void Playlist5Click (){ //on click the Playlist5 screen appears 
@@ -1205,6 +1341,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SpotifyObject.SetActive (false); // spotify menu goes away so you can see the Playlist
 		SpotifyShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void NowPlayingClick (){ //on click the NowPlaying screen appears 
@@ -1214,8 +1351,12 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		SpotifyObject.SetActive (false); // spotify menu goes away so you can see the NowPlaying screen
 		SpotifyShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
-
+	public void ScoopClick (){
+		GameObject.Find ("Scoop").GetComponent<AudioSource> ().Play (); //play scoop
+//	
+	}
 	//news stuff ??
 
 	public void News1Click (){ //on click the news1 screen appears 
@@ -1225,6 +1366,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NewsObject.SetActive (false); // news menu goes away so you can see the news article
 		NewsShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void News2Click (){ //on click the news2 screen appears 
@@ -1234,6 +1376,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NewsObject.SetActive (false); // news menu goes away so you can see the news article
 		NewsShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void News3Click (){ //on click the news3 screen appears 
@@ -1243,6 +1386,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NewsObject.SetActive (false); // news menu goes away so you can see the news article
 		NewsShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void News4Click (){ //on click the news4 screen appears 
@@ -1252,6 +1396,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NewsObject.SetActive (false); // news menu goes away so you can see the news article
 		NewsShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	public void News5Click (){ //on click the news5 screen appears 
@@ -1261,6 +1406,7 @@ public class HomeScreenManager : MonoBehaviour {
 		HomeScreenShowing = false;
 		NewsObject.SetActive (false); // news menu goes away so you can see the news article
 		NewsShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 
 	// phone screens 
@@ -1274,6 +1420,7 @@ public class HomeScreenManager : MonoBehaviour {
 		PhoneShowing = false;
 		KeypadObject.SetActive (false); // keypad goes away so you can see the voicemail screen
 		KeypadShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
 	}
 	public void KeypadClick (){ //on click the NowPlaying screen appears 
 		KeypadObject.SetActive (true); //NowPlaying becomes active 
@@ -1284,5 +1431,36 @@ public class HomeScreenManager : MonoBehaviour {
 		PhoneShowing = false;
 		VoicemailObject.SetActive (false); // voicemail goes away so you can see the keypad screen
 		VoicemailShowing = false;
+		GameObject.Find("intoapp").GetComponent<AudioSource> ().Play (); //play into app sound
+	}
+	public void OneButton (){
+		GameObject.Find("dial1").GetComponent<AudioSource> ().Play (); //play 1 sound
+	}
+	public void TwoButton (){
+		GameObject.Find("dial2").GetComponent<AudioSource> ().Play ();//play 2 sound
+	}
+	public void ThreeButton (){
+		GameObject.Find("dial3").GetComponent<AudioSource> ().Play ();//play 3 sound
+	}
+	public void FourButton (){
+		GameObject.Find("dial4").GetComponent<AudioSource> ().Play ();//play 4 sound
+	}
+	public void FiveButton (){
+		GameObject.Find("dial5").GetComponent<AudioSource> ().Play ();//play 5 sound
+	}
+	public void SixButton (){
+		GameObject.Find("dial6").GetComponent<AudioSource> ().Play ();//play 6 sound
+	}
+	public void SevenButton (){
+		GameObject.Find("dial7").GetComponent<AudioSource> ().Play ();//play 7 sound
+	}
+	public void EightButton (){
+		GameObject.Find("dial8").GetComponent<AudioSource> ().Play ();//play 8 sound
+	}
+	public void NineButton (){
+		GameObject.Find("dial9").GetComponent<AudioSource> ().Play ();//play 9 sound
+	}
+	public void Call (){
+		GameObject.Find("call").GetComponent<AudioSource> ().Play ();//play call sound
 	}
 }
